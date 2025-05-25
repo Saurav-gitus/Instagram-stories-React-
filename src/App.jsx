@@ -215,7 +215,8 @@ const InstagramStories = () => {
                 onClick={closeStory}
                 className="text-3xl text-amber-50 cursor-pointer font-light"
               >
-                &times;
+{/*                 &times; */}
+                X
               </button>
             </div>
 
