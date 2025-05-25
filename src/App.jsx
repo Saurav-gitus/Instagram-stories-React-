@@ -143,10 +143,10 @@ const InstagramStories = () => {
   const viewer = storiesData[activeStoryIndex];
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-start bg-gray-900 pt-8">
+    <div className="w-full min-h-screen flex justify-center items-start bg-gray-900">
       {/* Home Screen Styled Like Mobile */}
       {activeStoryIndex === null && (
-        <div className="bg-black w-[375px] h-[667px] rounded-2xl shadow-xl p-4 overflow-hidden">
+        <div className="bg-black w-[375px] h-[667px] rounded-lg shadow-xl p-4 overflow-hidden">
           <h1 className="text-xl font-bold mb-4 text-white">Stories</h1>
           <div className="flex gap-4 overflow-x-auto pb-2 no-scrollbar">
             {storiesData.map((story, index) => (
@@ -207,9 +207,14 @@ const InstagramStories = () => {
                   alt={viewer.user}
                   className="w-8 h-8 rounded-full object-cover"
                 />
-                <span className="text-sm font-semibold">{viewer.user}</span>
+                <span className="text-sm text-amber-50 font-semibold">
+                  {viewer.user}
+                </span>
               </div>
-              <button onClick={closeStory} className="text-3xl font-light">
+              <button
+                onClick={closeStory}
+                className="text-3xl text-amber-50 cursor-pointer font-light"
+              >
                 &times;
               </button>
             </div>
