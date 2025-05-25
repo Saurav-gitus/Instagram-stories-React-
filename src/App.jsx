@@ -209,6 +209,7 @@ const InstagramStories = () => {
                 />
                 <span className="text-sm text-amber-50 font-semibold">
                   {viewer.user}
+                  {viewer.user}
                 </span>
               </div>
               <button
